@@ -1,0 +1,17 @@
+[package]
+name = "spin-canary-install"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.44"
+clap = { version = "3.2.24", features = ["derive", "env"] }
+lazy_static = "1.4.0"
+
+[build-dependencies]
+vergen = { version = "^8.2.1", default-features = false, features = [
+  "build",
+  "git",
+  "gitcl",
+  "cargo",
+] }
